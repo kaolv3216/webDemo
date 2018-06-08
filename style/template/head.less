@@ -1,0 +1,63 @@
+@import "../variable.less";
+@import "../property.less";
+.publicHeader {
+  .h(58px);
+  .lh(58px);
+  .fs(14);
+  background: linear-gradient(to bottom,#60acf0,#64a5df,#62a0dd,#5994d6,#4f8ace,#4880ca);
+  background: -webkit-linear-gradient(to bottom,#60acf0,#64a5df,#62a0dd,#5994d6,#4f8ace,#4880ca);
+  background: -moz-linear-gradient(to bottom,#60acf0,#64a5df,#62a0dd,#5994d6,#4f8ace,#4880ca);
+  background: -ms-linear-gradient(to bottom,#60acf0,#64a5df,#62a0dd,#5994d6,#4f8ace,#4880ca);
+  h1 {
+    float: left;
+    color: @defaultColor;
+    .fs(22);
+    .pl(80px);
+    text-shadow: 2px 1px #000;
+  }
+}
+.publicHeaderR {
+  float: right;
+  color: @defaultColor;
+  .mr(50px);
+  p {
+    display: inline-block;
+    font-weight: bold;
+  }
+  a {
+    .w(50px);
+    .h(28px);
+    display: inline-block;
+    border: 1px solid #679e43;
+    background: linear-gradient(to bottom,#baf076,#a2d866,#9cd055,#8dc838,#8bc93a);
+    .lh(28px);
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    color: @defaultColor;
+  }
+}
+.publicHeaderR a:hover,.publicHeaderR a:active {
+  border: 1px solid #192b02;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(to bottom,#70b21c,#5c9613,#47740e,#3b6209,#2b4906);
+}
+.publicTime {
+  .h(28px);
+  .lh(28px);
+  .fs(12px);
+  background: linear-gradient(to bottom,#f5f9f8,#eef2fb,#e2ecf5,#e2ecf5,#e0edf6);
+  .pl(20px);
+  color: #808589;
+  border-bottom: 1px solid #c2ccd5;
+  a {
+    float: right;
+    color: #626367;
+  }
+}
+#time {
+  float: left;
+  background: url("../../image/time.png") 0 center no-repeat;
+  .pl(26px);
+}

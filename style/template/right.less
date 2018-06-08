@@ -1,0 +1,130 @@
+//右侧大部分页面样式
+.right {
+  width: 85%;
+}
+/*右边所在位置栏*/
+
+.location {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #e6eaf6;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #fefefe,#ffffff,#f6fafd);
+  color: #4a4a4a;
+  padding-left: 30px;
+
+  strong {
+    background: url("../../image/home.png") 0 center no-repeat;
+    display: inline-block;
+    padding-left: 30px;
+  }
+
+  span {
+    color: #2179a9;
+    font-weight: bold;
+  }
+}
+/*搜索信息栏*/
+
+.search {
+  height: 50px;
+  line-height: 50px;
+  background: #f6fafd;
+  padding-left: 24px;
+  color: #000;
+
+  input[type='text'] {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid #8ab2d5;
+    border-radius: 4px;
+  }
+
+  input[type='button'] {
+    margin-left: 20px;
+    width: 100px;
+    padding: 0 20px;
+    height: 30px;
+    border: 1px solid #7ba92c;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    background: #87c212 url("../../image/search.png") 10px center no-repeat;
+  }
+
+  input[type='button']:focus {
+    outline: none;
+    background-color: #5d8410;
+  }
+
+  a {
+    width: 80px;
+    padding-left: 40px;
+    float: right;
+    margin: 10px 60px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #0c89de;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    background: #47acf1 url("../../image/tianjia.png") 10px center no-repeat;
+    display: inline-block;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+
+  select {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #0c89de;
+    outline: none;
+  }
+}
+
+.search a:active,
+.search a:hover {
+  background-color: #0778c5;
+}
+
+.providerTable {
+  width: 100%;
+  border: 1px solid #ccc;
+
+  tr {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    &:nth-child(odd) {
+      background: #f6f7f9;
+    }
+
+    &:hover {
+      background: #e9f9ca;
+    }
+  }
+
+  td {
+    a {
+      margin-top: 10px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+.firstTr {
+  border: 1px solid #d6dfe6;
+  background: linear-gradient(to bottom, #f3f8fc, #ebf4f9, #e3f1fa, #e0f0fd, #d8e9fd);
+
+  th {
+    border-right: 2px solid rgba(209, 218, 223, 0.4);
+  }
+}

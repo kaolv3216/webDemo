@@ -1,0 +1,81 @@
+<div class="location">
+       <strong>你现在所在的位置是:</strong>
+       <span>网上送检平台 >> 添加强检器具页面</span>
+   </div>
+   <div class="providerAdd">
+       <form action="#">
+           <!--div的class 为error是验证错误，ok是验证成功-->
+           <div class="">
+               <label for="toolId">器具编号：</label>
+               <input type="text" name="toolId" id="toolId" required/>
+               <label for="firstclass">一级类别：</label>
+               <input type="text" name="firstclass" id="firstclass" required/>
+               <label for="secondclass">二级类别：</label>
+               <input type="text" name="secondclass" id="secondclass" required/>
+           </div>
+           <div class="">
+               <label for="toolname">器具名称：</label>
+               <input type="text" name="toolname" id="toolname" required/>
+               <label for="factoryname">出厂名称：</label>
+               <input type="text" name="factoryname" id="factoryname" required/>
+               <label for="scope">测量范围：</label>
+               <input type="text" name="scope" id="scope" required/>
+           </div>
+           <div class="">
+               <label for="exact">准确度等级：</label>
+               <input type="text" name="exact" id="exact" required/>
+               <label for="standard">型号规格：</label>
+               <input type="text" name="standard" id="standard" required/>
+               <label for="factory">生产厂家：</label>
+               <input type="text" name="factory" id="factory" required/>
+           </div>
+           <div class="">
+               <label for="number">出厂编号：</label>
+               <input type="text" name="number" id="number" required/>
+               <label for="use">用途：</label>
+               <input type="text" name="use" id="use" required/>
+               <label for="address">安装地点：</label>
+               <input type="text" name="address" id="address" required/>
+           </div>
+           <div>
+               <label >所属部门：</label>
+               <select name="depart" style="width: 275px;">
+                   <option value="">--请选择相应的部门--</option>
+                   <option value="">咨询部</option>
+                   <option value="">市场部</option>
+               </select>
+                <label for="person">使用人员：</label>
+               <input type="text" name="person" id="person" required/>
+                <label for="date">购入日期：</label>
+               <input type="text" name="date" id="date" required/>
+           </div>
+           <div>
+               <label for="price">购置价格：</label>
+               <input type="text" name="price" id="price" required/>
+               <label >使用状态：</label>
+               <select name="state" style="width: 275px;">
+                   <option value="在用">在用</option>
+                   <option value="停用">停用</option>
+                   <option value="报废">报废</option>
+               </select>
+               <label for="verifydate">检定日期：</label>
+               <input type="text" name="verifydate" id="verifydate" required/>
+
+           </div>
+           <div>
+               <label for="validdate">有效日期：</label>
+               <input type="text" name="validdate" id="validdate" required/>
+
+           </div>
+           <div>
+             <label for="price">上传证明材料：</label>
+             <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+           </div>
+           <div class="providerAddBtn">
+               <!--<a href="#">保存</a>-->
+               <!--<a href="billList.html">返回</a>-->
+               <input type="button" value="保存" onclick="#"/>
+               <input type="button" value="返回" onclick="history.back(-1)"/>
+           </div>
+       </form>
+   </div>
